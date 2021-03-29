@@ -17,4 +17,8 @@
                 println("The square of $i is an even number")
             }
         }
+
+        for((index, value) in squares.withIndex()){
+            println("The square for $index is $value")
+        }
     }
