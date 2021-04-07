@@ -1,6 +1,6 @@
 
     fun main(args: Array<String>){
-        val squares = Array(51) { i -> i  }
+        val squares = Array(51) { i -> i * i  }
         for(i in 0 until(squares.size)){
             println("The square for $i is ${squares[i]}")
         }
@@ -20,5 +20,9 @@
 
         for((index, value) in squares.withIndex()){
             println("The square for $index is $value")
+        }
+
+        squares.forEach {
+            println(it)
         }
     }
